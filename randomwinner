@@ -1,0 +1,9 @@
+# This program will take user input and choose a winner for a contest at random!
+
+import random
+print('Please enter the usernames of all the people who entered the contest. One random winner will be chosen!')
+
+contestEntries = input()
+totalEntries = contestEntries.split()
+
+print(totalEntries[random.randint(0, len(totalEntries) - 1)])
